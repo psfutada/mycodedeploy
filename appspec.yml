@@ -11,3 +11,4 @@ hooks:
    ApplicationStart:
      - location: shells/rungo.sh
        timeout: 180
+
