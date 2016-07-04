@@ -5,9 +5,9 @@ files:
      destination: /home/ec2-user/work
 
 hooks:
-   BeforeInstall:
+   ApplicationStop:
      - location: shells/run.sh
        timeout: 180
-   AfterInstall:
+   ApplicationStart:
      - location: shells/rungo.sh
        timeout: 180
