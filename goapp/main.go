@@ -11,7 +11,7 @@ type User struct {
 }
 
 func main() {
-	http.HandleFunc("/getUser", getUser)
+	http.HandleFunc("/index.html", getUser)
 	http.ListenAndServe(":3001", nil)
 }
 
