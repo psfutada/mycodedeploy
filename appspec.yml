@@ -4,7 +4,7 @@ files:
    - source: goapp
      destination: /home/ec2-user/work
    - source: nginx/nginx.conf
-     destination: /etc/nginx/nginx.conf
+     destination: /etc/nginx
 
 hooks:
    ApplicationStop:
