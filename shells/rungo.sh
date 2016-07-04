@@ -7,5 +7,5 @@ export GOROOT=/home/ec2-user/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=/home/ec2-user/work
 
-go run $GOPATH/main.go
+go run $GOPATH/main.go &
 
