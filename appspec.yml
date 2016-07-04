@@ -6,7 +6,7 @@ files:
 
 hooks:
    ApplicationStop:
-     - location: shells/run.sh
+     - location: shells/stopgo.sh
        timeout: 180
    ApplicationStart:
      - location: shells/rungo.sh
