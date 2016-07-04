@@ -3,6 +3,8 @@ os: linux
 files:
    - source: goapp
      destination: /home/ec2-user/work
+   - source: nginx/nginx.conf
+     destination: /etc/nginx/nginx.conf
 
 hooks:
    ApplicationStop:
