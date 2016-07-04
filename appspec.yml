@@ -2,9 +2,12 @@ version: 0.0
 os: linux
 files:
    - source: goapp
-     destination: /home/ec2-user
+     destination: /home/ec2-user/work
 
 hooks:
-   AfterInstall:
+   BeforeInstall:
      - location: shells/run.sh
+       timeout: 180
+   AfterInstall:
+     - location: shells/rungo.sh
        timeout: 180
