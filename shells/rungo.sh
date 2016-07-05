@@ -9,4 +9,5 @@ export GOPATH=/home/ec2-user/work
 
 go run $GOPATH/main.go > /dev/null 2> /dev/null < /dev/null &
 
+sudo killall go
 sudo service nginx restart

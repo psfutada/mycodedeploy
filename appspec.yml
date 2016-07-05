@@ -7,9 +7,6 @@ files:
      destination: /home/ec2-user/work
 
 hooks:
-   ApplicationStop:
-     - location: shells/stopgo.sh
-       timeout: 180
    AfterInstall:
      - location: shells/copyNginxConf.sh
        timeout: 180
