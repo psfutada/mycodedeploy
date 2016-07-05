@@ -1,4 +1,3 @@
 #!/bin/sh
 
-ls / > log.txt
-
+sudo kill -9 `ps --no-heading -C go -o pid`
