@@ -10,7 +10,7 @@ export GOPATH=/home/ec2-user/work
 # Restart Go server
 sudo killall nor
 go install nor
-$GOPATH/bin/nor > /dev/null 2> /dev/null < /dev/null &
+$GOPATH/bin/nor >& go.log < /dev/null &
 
 # Restart Nginx
 sudo service nginx restart
