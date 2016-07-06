@@ -16,7 +16,7 @@ func main() {
 }
 
 func getUser(w http.ResponseWriter, r *http.Request) {
-	user := User{"Tom", 18}
+	user := User{"Tom", 19}
 	enc := json.NewEncoder(w)
 	enc.Encode(user)
 }
